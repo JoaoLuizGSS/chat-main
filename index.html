@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Realtime - Firebase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="login-section" class="container">
+        <div class="card">
+            <h2>Entrar no Chat</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Seu nome..." required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="chat-section" class="container" style="display: none;">
+        <div class="chat-wrapper">
+            <div id="chat-messages" class="messages-container"></div>
+            <form id="chat-form" class="input-area">
+                <input type="text" id="chat-input" placeholder="Digite uma mensagem..." required autocomplete="off">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

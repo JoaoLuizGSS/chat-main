@@ -1,0 +1,76 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Roboto Mono", sans-serif; }
+
+body {
+    background: url(../background.png);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container { width: 100%; max-width: 450px; padding: 20px; }
+
+.card {
+    background-color: #1c1f23;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.card h2 { color: #fff; margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #3e444a;
+    background-color: #24292e;
+    color: #fff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00a884;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chat-wrapper {
+    background-color: #1c1f23;
+    height: 550px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.messages-container {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    background-color: #24292e;
+    gap: 10px;
+}
+
+.input-area input { margin-bottom: 0; }
+
+.msg { padding: 8px 12px; border-radius: 8px; max-width: 80%; font-size: 14px; color: #000; word-wrap: break-word; }
+.msg-self { align-self: flex-end; background-color: #dcf8c6; }
+.msg-other { align-self: flex-start; background-color: #fff; }
+.sender { display: block; font-weight: bold; font-size: 11px; 
